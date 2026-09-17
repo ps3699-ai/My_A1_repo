@@ -115,7 +115,7 @@ enum Statetype handleInChar(int c)
         state = STATE_CHAR_ESCAPE;
     } else if (c == '\'') {
         putchar('\'');
-        state = STATE_CHAR;
+        state = STATE_TEXT;
     } else {
         putchar(c);
         state = STATE_CHAR;
